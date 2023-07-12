@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <!-- 表单字段 -->
+        用户名：<input type="text" name="username">
+        <br>
+        密码：<input type="password" name="password">
+        <br>
+        确认密码：<input type="password" name="password2">
+        <br>
+        <!-- 提交按钮 -->
+        <button type="submit">提交</button>
+
+        <!-- 使用遍历来获取闪现的消息 -->
+        {%for message in get_flashed_messages()%}
+            {{message}}
+        {%endfor%}
+
+      </form>
+      
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%if age>18 %}
+    <div>
+        您满十八了，可以进入
+    </div>
+   
+    {%elif age==18%}
+    <div>
+        您刚好十八岁，需要父母陪同
+    </div>
+    {%else%}
+    <div>
+        您未满十八周岁，不能进入网吧
+    </div>
+    {% endif %}
+
+
+    <!-- 没有break,只能一次性循环完毕 -->
+    {%for book in books%}
+    <p>
+       图书名称 {{book.name}}
+       图书作者{{book.author}}
+    </p>
+    {%endfor%}
+
+
+
+
+
+
+</body>
+</html>

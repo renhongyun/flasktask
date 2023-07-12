@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <script src="{{url_for('static',filename='js/my.js')}}""></script>
+</head>
+<body>
+    yu
+    <!-- 用url静态加载文件，第一个参数都是static -->
+    <img src="{{url_for('static',filename='ji.jpg')}}" alt="">
+</body>
+</html>
